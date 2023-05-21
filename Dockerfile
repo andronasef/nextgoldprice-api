@@ -10,5 +10,5 @@ COPY --link --chown=1000 . .
 
 RUN npm i
 
-CMD pm2 start main.js -i $CPU_CORES --no-daemon
+CMD pm2 start index.js -i $CPU_CORES --no-daemon
 
